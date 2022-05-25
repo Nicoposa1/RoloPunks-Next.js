@@ -41,5 +41,18 @@ contract RoloPunksNFT is ERC721, Ownable {
     require(success, 'Wallet is not set');
   }
 
+  function mint(uint _quantity) public payable {
+    require(isPublicMintEnable, 'Public mint is disabled');
+    require(msg.value == _quantity * mintPrice, 'Mint price is not correct');
+    require(totalSupply + _quantity <= maxSupply, 'Sold Out');
+    require(walletMints[msg.sender] + _quantity <= maxPerWallet, 'Max per wallet');
+
+    for(uint256 i = 0; i < _quantity; i++) {
+      uint256 tokenId = totalSupply + i;
+      totalSupply++;
+      _safeMint(msg.sender, tokenId);
+    }
+  }
+
 }
 
