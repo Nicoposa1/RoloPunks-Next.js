@@ -53,7 +53,7 @@ function MainMint(props) {
             fontFamily="VT323"
             textShadow="0 2px 2px #000"
           >
-            It's 2078. Can the RoloPunks NFT save humans from destructive
+            It&apos;s 2078. Can the RoloPunks NFT save humans from destructive
             rampant NFT speculation? Mint RoloPunks to find out.
           </Text>
         </div>

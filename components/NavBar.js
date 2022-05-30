@@ -19,13 +19,13 @@ function NavBar(props) {
     <Flex justify="space-between" align="center" padding="30px">
       <Flex justify="space-around" width="40%" padding="0 75px">
         <Link target="_blank" href="https://www.linkedin.com/in/nicolasposa/">
-          <Image src="/725337.png" boxSize="42px" margin="0 15px" />
+          <Image src="/725337.png" boxSize="42px" margin="0 15px" alt="LinkedIn logo" />
         </Link>
-        <Link target="_blank" href="https://twitter.com/DevNico_">
-          <Image src="/twitter_32x32.png" boxSize="42px" margin="0 15px" />
+        <Link target="_blank" href="https://twitter.com/DevNico_" >
+          <Image src="/twitter_32x32.png" boxSize="42px" margin="0 15px" alt="Twitter logo" />
         </Link>
-        <Link target="_blank" href="mailto:nicoposa57@gmail.com">
-          <Image src="/email.png" boxSize="42px" margin="0 15px" />
+        <Link target="_blank" href="mailto:nicoposa57@gmail.com" >
+          <Image src="/email.png" boxSize="42px" margin="0 15px" alt="Email logo" />
         </Link>
       </Flex>
 
