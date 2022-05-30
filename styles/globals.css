@@ -38,7 +38,7 @@ body {
   height: 100%;
   right: 0;
   bottom: 0;
-  background-image: url("../public/background/parallax-bg.gif");
+  background-image: url("../public/parallax-bg.gif");
   background-size: cover;
   background-repeat: no-repeat;
   background-attachment: fixed;
